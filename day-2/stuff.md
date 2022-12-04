@@ -1,17 +1,23 @@
-A -> Rock
-B -> Paper
-C -> Scissors
+# Part One
 
-X -> Rock
-Y -> Paper
-Z -> Scissors
+- A -> Rock
+- B -> Paper
+- C -> Scissors
 
-Rock x Scissors = Win
-Scirrors x Paper = Win
-Paper x Rock = Win
+---
 
-# \_\_Part Two \_\_
+- X -> Rock
+- Y -> Paper
+- Z -> Scissors
 
-X -> Lose
-Y -> Draw
-Z -> Win
+---
+
+- Rock x Scissors = Win
+- Scirrors x Paper = Win
+- Paper x Rock = Win
+
+# Part Two
+
+- X -> Lose
+- Y -> Draw
+- Z -> Win
