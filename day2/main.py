@@ -1,7 +1,4 @@
-def inp(file_path) -> str:
-    with open(file_path, 'r') as f:
-        return f.read().strip()
-
+from utilities.fileinputoutput import readFile
 
 def get_rounds(input_str: str) -> list:
     return [round.split(' ') for round in input_str.split('\n')]
@@ -33,7 +30,7 @@ def get_round_result(round: list) -> int:
 
 
 # *slaps roof of method* This puppy can fit so many returns in it
-def get_move_to_play(round: list) -> str:
+def get_move_to_play(round: list) -> int:
     opponent_moves = {
         'A': 'rock',
         'B': 'paper',
@@ -88,7 +85,7 @@ def get_score_on_move_to_play(rounds: list) -> int:
 
 
 def main():
-    input_str = inp('input.txt')
+    input_str = readFile('input.txt')
     rounds = get_rounds(input_str)
     # print(rounds)
     score = get_score(rounds)

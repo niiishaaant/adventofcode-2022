@@ -1,6 +1,4 @@
-def inp(file_path: str) -> str:
-    with open(file_path, 'r') as f:
-        return f.read().strip()
+from utilities.fileinputoutput import readFile
 
 
 def get_calories_per_elf(lst: str) -> list:
@@ -20,7 +18,7 @@ def get_sum_of_calories_carried_by_top_3_elves(calories_per_elf: list) -> int:
 
 
 def runner():
-    calories_per_elf = get_calories_per_elf(inp('input.txt'))
+    calories_per_elf = get_calories_per_elf(readFile('input.txt'))
     print(get_highest_calories_carried_by_elf(calories_per_elf))
     print(get_sum_of_calories_carried_by_top_3_elves(calories_per_elf))
 
