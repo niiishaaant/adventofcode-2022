@@ -1,7 +1,8 @@
-from utilities.fileinputoutput import readFile
+from utils.fileio import readFile
+
 
 def get_rounds(input_str: str) -> list:
-    return [round.split(' ') for round in input_str.split('\n')]
+    return [round.split(' ') for round in input_str.split()]
 
 
 def get_round_result(round: list) -> int:
